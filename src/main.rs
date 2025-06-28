@@ -226,7 +226,7 @@ impl Application for TimerApp {
             format!("{minutes:0>2}:{seconds:0>2}")
         };
 
-        format!("Timerys - {title_time}",)
+        format!("Timeris - {title_time}",)
     }
 
     fn update(&mut self, message: Self::Message) -> Command<Self::Message> {
