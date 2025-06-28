@@ -1,21 +1,25 @@
 [package]
-name = "timerys"
+name = "timeris"
 authors = ["Clement Tsang <cjhtsang@uwaterloo.ca>"]
 version = "0.1.1"
 edition = "2021"
-repository = "https://github.com/ClementTsang/timers"
+repository = "https://github.com/ClementTsang/timeris"
 keywords = ["cross-platform", "timer"]
 license = "MIT"
 categories = ["gui"]
 description = "A simple cross-platform timer app."
-documentation = "https://github.com/ClementTsang/timerys"
+documentation = "https://github.com/ClementTsang/timeris"
 readme = "README.md"
 exclude = [".github", ".vscode", "target", "readme_assets"]
 
 [dependencies]
 dirs = "5.0.1"
 eyre = "0.6.9"
-iced = { version = "0.12.1", features = ["advanced", "tokio", "wgpu"], default-features = false }
+iced = { version = "0.12.1", features = [
+    "advanced",
+    "tokio",
+    "wgpu",
+], default-features = false }
 rodio = "0.18.1"
 # tray-icon = "0.12.0"
 
